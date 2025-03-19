@@ -491,3 +491,5 @@ $RECYCLE.BIN/
 API/appsettings.json
 API/udemy_course.db
 CourseAssets/Reactivities.postman_collection.json
+API/udemy_course.db-shm
+API/udemy_course.db-wal
