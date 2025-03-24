@@ -1,9 +1,10 @@
 import { createBrowserRouter } from "react-router";
 import App from "../layout/App";
-import HomePage from "../../features/activities/home/HomePage";
+import HomePage from "../../features/home/HomePage";
 import ActivityDashboard from "../../features/activities/dashboard/ActivityDashboard";
 import ActivityForm from "../../features/activities/form/ActivityForm";
 import ActivityDetailsPage from "../../features/activities/details/ActivityDetailsPage";
+import Counter from "../../features/counter/counter";
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
       { path: "activities/:id", element: <ActivityDetailsPage /> },
       { path: "createActivity", element: <ActivityForm key="create" /> },
       { path: "manage/:id", element: <ActivityForm /> },
+      { path: "counter/", element: <Counter /> },
     ],
   },
 ]);
